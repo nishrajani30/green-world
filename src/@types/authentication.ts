@@ -11,7 +11,6 @@ export interface LoginProps {
 
 export type AuthContextType = {
   user: User | null;
-  getToken: () => string | null;
   login: (loginProps: LoginProps) => Promise<unknown>;
   logout: () => void;
 };

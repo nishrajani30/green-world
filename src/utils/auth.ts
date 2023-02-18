@@ -1,11 +1,15 @@
-export const clearToken = () => {
-  localStorage.removeItem('token')
+import {User} from "../@types/authentication";
+
+export const clearUser = () => {
+  localStorage.removeItem('user')
 }
 
-export const setToken = (token: string) => {
-  localStorage.setItem('token', token)
+export const updateUser = (user: User) => {
+  console.log('user', user)
+  localStorage.setItem('user', JSON.stringify(user))
 }
 
-export const getToken = () => {
-  return localStorage.getItem('token')
+export const getUser = () => {
+  const user = localStorage.getItem('user');
+  return user ? JSON.parse(user) : null;
 }

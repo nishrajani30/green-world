@@ -1,44 +1,33 @@
 import React, {
   createContext,
   ReactNode,
-  useCallback,
-  useEffect,
-  useState,
+  useCallback, useState,
 } from 'react';
-import {AuthContextType, LoginProps, User} from '../@types/authentication';
+import {AuthContextType, LoginProps} from '../@types/authentication';
+import {login as loginApi} from '../api/login';
 
-import { clearToken, getToken, setToken } from '../utils/auth';
+import {clearUser, getUser, updateUser} from '../utils/auth';
 
 const AuthContext = createContext<AuthContextType | null>(null);
 
-const AuthProvider = ({ children }: { children: ReactNode }) => {
-  const [user, setUser] = useState<User | null>(null);
-  // TODO this could be async call
+const AuthProvider = ({children}: { children: ReactNode }) => {
+  const [user, setUser] = useState(getUser());
   const login = useCallback(
-    async ({ email, password }: LoginProps) => {
-      // TODO Dummy API call to get token and update user information
-      // TODO - setUser
-      // TODO - setToken
+    async ({email, password}: LoginProps) => {
+      const {data} = await loginApi(email, password);
+      if (data) {
+        setUser(data);
+        updateUser(data);
+      }
     },
     [],
   );
 
-  // TODO this could be async call
+  // this could be async call
   const logout = useCallback(async () => {
-    clearToken();
+    clearUser();
     setUser(null);
   }, []);
-
-  // TODO this could be async call
-  const initial = useCallback(async () => {
-    // TODO - get the token and make a dummy api call to get user information
-    // TODO - setUser
-    // TODO - setToken
-  }, []);
-
-  useEffect(() => {
-    initial();
-  }, [initial]);
 
   return (
     <AuthContext.Provider
@@ -46,7 +35,6 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
         login,
         logout,
         user,
-        getToken,
       }}
     >
       {children}
@@ -54,4 +42,4 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export { AuthContext, AuthProvider };
+export {AuthContext, AuthProvider};

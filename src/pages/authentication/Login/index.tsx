@@ -1,3 +1,16 @@
-import {Paper, Typography} from "@mui/material";
+import { Container } from '@mui/material';
 
-export default () => <Typography>Login</Typography>;
+import LoginForm from '../../../components/Login';
+import { RootStyle } from './Login.styles';
+import SideBarStyle from './SideBarStyle';
+
+export default function Index() {
+  return (
+    <RootStyle title="Login">
+      <SideBarStyle />
+      <Container maxWidth="sm">
+        <LoginForm />
+      </Container>
+    </RootStyle>
+  );
+}
