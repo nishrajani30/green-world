@@ -41,6 +41,9 @@ const LandingPage = () => {
               <Logo sx={{flex: "row"}}/>
               <AnimatedGradientText variant="h6" sx={{marginLeft: 2}}>Green World</AnimatedGradientText>
             </Box>
+            <Box display={{xs: "flex", lg: "none"}} sx={{flexGrow: 1}} flexDirection="row">
+              <Logo sx={{flex: "row"}}/>
+            </Box>
             <Divider/>
             <Box sx={{display: {xs: 'none', sm: 'block'}}}>
               {navItems.map((item) => (
