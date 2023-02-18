@@ -1,7 +1,10 @@
 export interface User {
   id: string;
   email: string;
-  name: string;
+  username: string;
+  image: string;
+  firstName: string;
+  lastName: string;
 }
 
 export interface LoginProps {

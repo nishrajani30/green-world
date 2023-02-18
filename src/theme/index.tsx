@@ -7,7 +7,8 @@ import {
   ThemeProvider,
 } from '@mui/material/styles';
 import { ReactNode, useMemo } from 'react';
-import {lightGreen} from "@mui/material/colors";
+
+export const PRIMARY_COLOR = '#00BFA6';
 
 // ----------------------------------------------------------------------
 
