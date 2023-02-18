@@ -3,9 +3,10 @@ import {Box} from "@mui/material";
 import AnimatedGradientText from '../../../components/AnimatedGradientText';
 
 const SideBarStyle = () => (
-  <Box display="flex" flexDirection="column" width="70%" sx={{
-    display: {xs: "none", lg: "block", paddingBottom: '46px'}
-  }}>
+  <Box display="flex" flexDirection="column" width="70%"
+       sx={{
+         display: {xs: "none", lg: "block", paddingBottom: '46px'}
+       }}>
     <StyledSideBar>
       <Box display="flex" flexDirection="row" alignItems="center" justifyContent="center">
         <AnimatedGradientText variant="h2">Green World</AnimatedGradientText>
