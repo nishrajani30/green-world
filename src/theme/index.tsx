@@ -7,6 +7,7 @@ import {
   ThemeProvider,
 } from '@mui/material/styles';
 import { ReactNode, useMemo } from 'react';
+import {lightGreen} from "@mui/material/colors";
 
 // ----------------------------------------------------------------------
 
@@ -19,6 +20,11 @@ export default function ThemeConfig({ children }: ThemeConfigProps) {
     () => ({
       palette: {
         mode: 'dark',
+        primary: {
+          main: '#00BFA6',
+          light: '#5EBFB5FF',
+          dark: '#026153FF',
+        },
       },
     }),
     [],
