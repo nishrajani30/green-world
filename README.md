@@ -21,9 +21,10 @@ resources.
 
 ## About the Project
 
-This project is created in ReactJS and it is a simple website for Green World Initiative. It has three parts:
+This project is created in ReactJS, and it is a simple website for Green World Initiative. It has three parts:
 
 **1. Landing Page**:
+
 ![Landing Page](./assets/images/landing-page.png "Landing Page")
 
 The landing page of Green World Initiative is designed to be simple, visually appealing and user-friendly. It has been
@@ -31,6 +32,7 @@ developed using ReactJS and incorporates a modern and responsive design to ensur
 The landing page serves as a gateway to all the key features of the website.
 
 **2. Login Page**:
+
 ![Login Page](./assets/images/login.png "Login Page")
 
 As part of the Green World Initiative website, the Login page provides a secure and convenient way for users to access
