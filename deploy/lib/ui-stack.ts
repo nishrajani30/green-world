@@ -35,7 +35,7 @@ export class DeployStack extends Stack {
 
     // s3
     const bucket = new Bucket(this, 'PublishWebsiteBucket', {
-      bucketName: `green-world-nish-static-website`,
+      bucketName: `green-world-nishrajani-static-website`,
       blockPublicAccess: BlockPublicAccess.BLOCK_ALL,
     });
 
@@ -56,7 +56,7 @@ export class DeployStack extends Stack {
     let certificateProps: DnsValidatedCertificateProps = {
       domainName: siteDomain,
       hostedZone: zone,
-      region: 'ap-southeast-2', // Cloudfront only checks this region for certificates.
+      region: 'us-east-1', // Cloudfront only checks this region for certificates.
       subjectAlternativeNames: [siteDomain, `www.${siteDomain}`]
     };
 
