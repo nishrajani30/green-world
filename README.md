@@ -86,14 +86,15 @@ To get a local copy up and running follow these simple example steps.
 ## Usage
 
 - Run the project
-  ```sh
-  yarn start
-```
+    ```sh
+    yarn start
+    ```
 
 - Run the test cases
-  ```sh
-  yarn test
-```
+
+    ```sh
+    yarn test
+    ```
 
 ### Login Credentials
 
