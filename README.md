@@ -21,6 +21,7 @@ resources.
         - [Installation](#installation)
     - [Usage](#usage)
       - [Login Credentials](#login-credentials)
+    - [Deployment](#deployment)
     - [Roadmap](#roadmap)
     - [License](#license)
 
@@ -140,6 +141,17 @@ The following are the list of users with their credentials.
 | xisherwoodr@ask.com | HLDqN5vCF |
 | jissetts@hostgator.com | ePawWgrnZR8L |
 | kdulyt@umich.edu | 5t6q4KC7O |
+
+## Deployment
+
+The code is deployed on [AWS S3](https://aws.amazon.com/s3/) and [AWS CloudFront](https://aws.amazon.com/cloudfront/).
+`deploy` folder contains the AWS CDK for the deployment.
+
+- To deploy the code on AWS S3 and AWS CloudFront, run the following command
+
+    ```sh
+    cd deploy && cdk synth && cdk deploy
+    ```
 
 ## License
 
