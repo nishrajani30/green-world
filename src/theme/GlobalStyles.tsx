@@ -2,9 +2,7 @@
 import { GlobalStyles as GlobalThemeStyles } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
-// ----------------------------------------------------------------------
-
-export default () => {
+const GlobalStyles = () => {
   const theme = useTheme();
 
   return (
@@ -88,3 +86,5 @@ export default () => {
     />
   );
 }
+
+export default GlobalStyles;

@@ -1,3 +1,5 @@
 import {Outlet} from "react-router";
 
-export default () =>  <Outlet />;
+const Layout = () =>  <Outlet />;
+
+export default Layout;

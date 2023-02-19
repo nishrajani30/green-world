@@ -21,7 +21,7 @@ import {
 } from "@mui/material";
 import Logo from "../../components/Logo";
 import AnimatedGradientText from "../../components/AnimatedGradientText";
-import React, {useState} from "react";
+import React from "react";
 import {PRIMARY_COLOR} from "../../theme";
 import useDashboard from "./useDashboard";
 import queries from "../../data/dashboard/queries";
@@ -29,7 +29,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const settings = ['Profile', 'Account', 'Dashboard'];
 
-export default () => {
+const Dashboard = () => {
   const {
     user,
     onLogout,
@@ -56,6 +56,7 @@ export default () => {
           <Divider/>
           <IconButton onClick={handleOpenUserMenu} sx={{p: 0}}>
             <Avatar
+              data-testid="user-avatar"
               sx={{bgcolor: PRIMARY_COLOR}}
               alt={user?.username!}
               src={user?.image!}
@@ -95,7 +96,7 @@ export default () => {
           {
             queries.map(({id, image, question}) => (
               <ListItem key={id}>
-                <Button sx={{width: '100%'}} onClick={() => handleQuestion(id)}>
+                <Button sx={{width: '100%'}} onClick={() => handleQuestion(id)} data-testid="question">
                   <Paper sx={{width: '100%', height: '100%'}}>
                     <Box
                       display="flex"
@@ -106,9 +107,10 @@ export default () => {
                     >
                       <Box sx={{display: {xs: 'none', lg: "flex"}}}>
                         <img
+                          alt="Question"
                           src={image}
                           style={{maxWidth: '300px', maxHeight: '300px'}}
-                          alt="image"/>
+                          />
                       </Box>
                       <Box display="flex" flexGrow="1" flexDirection="column" justifyContent="center"
                            alignItems="center">
@@ -148,3 +150,5 @@ export default () => {
     </Box>
   );
 };
+
+export default Dashboard;

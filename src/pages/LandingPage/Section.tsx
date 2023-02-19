@@ -12,6 +12,7 @@ const Section = ({title, image, subTitle, imageDirection = ImageDirection.LEFT}:
       direction={imageDirection === ImageDirection.LEFT ? "row-reverse" : "row"}
       alignItems="center"
       justifyContent="space-between"
+      data-testid="image-container"
     >
       <Grid item xs={12} md={4}>
         <Typography variant="h5">{title}</Typography>

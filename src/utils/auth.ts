@@ -5,7 +5,6 @@ export const clearUser = () => {
 }
 
 export const updateUser = (user: User) => {
-  console.log('user', user)
   localStorage.setItem('user', JSON.stringify(user))
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import LoadingScreen from "./components/LoadingScreen";
-import GlobalStyles from "./theme/globalStyles";
+import GlobalStyles from "./theme/GlobalStyles";
 import Router from "./routes";
 import {BrowserRouter} from "react-router-dom";
 import ThemConfig from "./theme";

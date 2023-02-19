@@ -51,7 +51,7 @@ const useLogin = () => {
       }
       setIsAuthenticating(false);
     },
-    [navigate],
+    [login, navigate],
   );
 
   return {

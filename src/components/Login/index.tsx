@@ -27,7 +27,7 @@ const Login = () => {
   } = useLogin();
 
   return (
-    <StyledContainer>
+    <StyledContainer data-testid="login-form">
       <AnimatedGradientText variant="h3" sx={{mb: 4, display: {lg: "none", xs: "block"}}}>
         Green World
       </AnimatedGradientText>

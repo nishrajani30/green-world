@@ -16,7 +16,7 @@ type ThemeConfigProps = {
   children: ReactNode;
 };
 
-export default function ThemeConfig({ children }: ThemeConfigProps) {
+const ThemeConfig = ({ children }: ThemeConfigProps) => {
   const themeOptions: ThemeOptions = useMemo(
     () => ({
       palette: {
@@ -41,4 +41,6 @@ export default function ThemeConfig({ children }: ThemeConfigProps) {
       </ThemeProvider>
     </StyledEngineProvider>
   );
-}
+};
+
+export default ThemeConfig
