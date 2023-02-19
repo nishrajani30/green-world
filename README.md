@@ -1,46 +1,144 @@
-# Getting Started with Create React App
+# Green World
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Green World Initiative is a global movement focused on promoting environmental sustainability and creating a
+healthier planet for all living beings. The initiative aims to raise awareness about critical environmental issues, such
+as climate change, deforestation, air and water pollution, and promote responsible and sustainable use of natural
+resources.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Green World](#green-world)
+    - [Table of Contents](#table-of-contents)
+    - [About the Project](#about-the-project)
+        - [Built With](#built-with)
+    - [Getting Started](#getting-started)
+        - [Prerequisites](#prerequisites)
+        - [Installation](#installation)
+    - [Usage](#usage)
+      - [Login Credentials](#login-credentials)
+    - [Roadmap](#roadmap)
+    - [License](#license)
 
-### `npm start`
+## About the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is created in ReactJS and it is a simple website for Green World Initiative. It has three parts:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**1. Landing Page**:
+![Landing Page](./assets/images/landing-page.png "Landing Page")
 
-### `npm test`
+The landing page of Green World Initiative is designed to be simple, visually appealing and user-friendly. It has been
+developed using ReactJS and incorporates a modern and responsive design to ensure seamless navigation across devices.
+The landing page serves as a gateway to all the key features of the website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**2. Login Page**:
+![Login Page](./assets/images/login.png "Login Page")
 
-### `npm run build`
+As part of the Green World Initiative website, the Login page provides a secure and convenient way for users to access
+their accounts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The page typically includes a form that allows users to enter their login credentials, such as a username and password.
+The login page call [Dummy Auth API](https://dummyjson.com/docs/auth)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**3. Dashboard Page**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Dashboard Page](./assets/images/dashboard.png "Login Page")
 
-### `npm run eject`
+The Dashboard Page of the Green World Initiative website is the main interface for authenticated users. It provides a
+comprehensive overview of the user's account and allows them to access various features of the website.
+In Dashboard Page, the user can see the list of all the environment question, and it's solution.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ReactJS](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Material UI](https://material-ui.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Frame Motion](https://www.framer.com/motion/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Zod](https://zod.dev/)
+- [Axios](https://github.com/axios/axios)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [EsLint](https://eslint.org/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Getting Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Prerequisites
 
-## Learn More
+- [NodeJS](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [Git](https://git-scm.com/)
+- [VSCode](https://code.visualstudio.com/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To get a local copy up and running follow these simple example steps.
+- Clone the repo
+  ```sh
+  git clone git@github.com:nishrajani30/green-world.git
+  ```
+  
+- Install NPM packages
+  ```sh
+  yarn install
+  ```
+  
+## Usage
+
+- Run the project
+  ```sh
+  yarn start
+```
+
+- Run the test cases
+  ```sh
+  yarn test
+```
+
+### Login Credentials
+
+The Login page call [Dummy Auth API](https://dummyjson.com/docs/auth) to authenticate the user.
+The following are the list of users with their credentials.    
+
+| Email | Password |
+| --- | --- |
+| atuny0@sohu.com | 9uQFF1Lh |
+| hbingley1@plala.or.jp | CQutx25i8r |
+| rshawe2@51.la | OWsTbMUgFc |
+| yraigatt3@nature.com | sRQxjPfdS |
+| kmeus4@upenn.edu | aUTdmmmbH |
+| jtreleven5@nhs.uk | zY1nE46Zm |
+| dpettegre6@columbia.edu | YVmhktgYVS |
+| ggude7@chron.com | MWwlaeWcOoF6 |
+| nloiterton8@aol.com | HTQxxXV9Bq4 |
+| umcgourty9@jalbum.net | i0xzpX |
+| acharlota@liveinternet.ru | M9lbMdydMN |
+| rhallawellb@dropbox.com | esTkitT1r |
+| lgribbinc@posterous.com | ftGj8LZTtv9g |
+| mturleyd@tumblr.com | GyLnCB8gNIp |
+| kminchelle@qq.com | 0lelplR |
+| dpierrof@vimeo.com | Vru55Y4tufI4 |
+| vcholdcroftg@ucoz.com | mSPzYZfR |
+| sberminghamh@chron.com | cAjfb8vg |
+| bleveragei@so-net.ne.jp | UZGAiqPqWQHQ |
+| aeatockj@psu.edu | szWAG6hc |
+| ckensleyk@pen.io | tq7kPXyf |
+| froachel@howstuffworks.com | rfVSKImC |
+| beykelhofm@wikispaces.com | zQwaHTHbuZyr |
+| brickeardn@fema.gov | bMQnPttV |
+| dfundello@amazon.co.jp | k9zgV68UKw8m |
+| lgronaverp@cornell.edu | 4a1dAKDv9KB9 |
+| fokillq@amazon.co.jp | xZnWSWnqH |
+| xisherwoodr@ask.com | HLDqN5vCF |
+| jissetts@hostgator.com | ePawWgrnZR8L |
+| kdulyt@umich.edu | 5t6q4KC7O |
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Roadmap
+
+- [ ] Add more test cases
+- [ ] Add more features
+ 

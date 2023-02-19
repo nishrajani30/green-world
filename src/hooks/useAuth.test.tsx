@@ -11,6 +11,7 @@ describe('useAuth', () => {
     const {result} = renderHook(() => useAuth(), {
       wrapper: ({children}) => <AuthProvider>{children}</AuthProvider>,
     });
+    // @ts-ignore
     loginApi.mockResolvedValue({data: {name: 'Test User'}});
     await act(async () => {
       await result.current.login({email: 'test@test.com', password: 'test123'});
